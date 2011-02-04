@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="chp5">Chapter 5 Exercise!</string>
+    <string name="app_name">chp5</string>
+    <string name="default_editText">Default Strings</string>
+</resources>

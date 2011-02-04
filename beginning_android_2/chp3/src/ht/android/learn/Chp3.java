@@ -21,7 +21,7 @@ public class Chp3 extends Activity implements OnClickListener{
         
         btn.setOnClickListener(this);
         updateTime();
-
+        
     }
 
 	private void updateTime() {

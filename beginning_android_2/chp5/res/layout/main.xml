@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+   	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+		<TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/chp5"
+		    />
+		<ImageView 
+			android:id="@+id/androidIcon"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:adjustViewBounds="true"
+			android:src="@drawable/icon"
+			/>
+		<EditText
+			android:id="@+id/textField"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:text="@string/default_editText"
+			/>
+		<Button
+			android:id="@+id/button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Click me to display Text"
+			/>
+		<CheckBox 
+			android:id="@+id/checkBox" 
+			android:layout_width="fill_parent" 
+			android:text="This check box is unchecked" 
+			android:layout_height="wrap_content"
+			/>
+		<TextView
+			android:id="@+id/display"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text=" "
+		    />
+		<TextView
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="Radio Buttons Below"
+		    />
+	</LinearLayout>
+	
+   	<RadioGroup
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+   		<RadioButton android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Rock" android:id="@+id/radio1"></RadioButton>
+		<RadioButton
+			android:id="@+id/radio2"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Scissors"
+			/>
+		<RadioButton
+			android:id="@+id/radio3"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Paper"
+			/>		
+	</RadioGroup>
+
+</LinearLayout>
+
