@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/ex7_1" android:title="Ex 7.1"></item>
+    <item android:id="@+id/ex7_2" android:title="Ex 7.2"></item>
+    <item android:id="@+id/ex7_3" android:title="Ex 7.3"></item>
+</menu>
