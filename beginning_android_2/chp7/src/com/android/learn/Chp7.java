@@ -16,7 +16,6 @@ public class Chp7 extends ListActivity {
 	String[] items = {"This","is","a", "stupid", "array", "list", "but", 
 					"whatever"};
 	
-	
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -25,12 +24,13 @@ public class Chp7 extends ListActivity {
     
 	private void runExOne() {
         setContentView(R.layout.main);
-        setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,items));
+        setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_multiple_choice,items));
         selection = (TextView)findViewById(R.id.selection);
 	}    
     
     public void onListItemClick(ListView parent, View v, int position, long id) {
-    	String str = parent.toString() + ": " + v.toString() + ": " + position + ": " + id;
+    	String str = "Position: " + position + ": " + id + "\n";
+    	str = str + items[position];
     	selection.setText(str);
     }
     
@@ -42,7 +42,7 @@ public class Chp7 extends ListActivity {
     }
     
 	private void runNoEx() {
-		setContentView(R.layout.empty_layout);
+		//setContentView(R.layout.empty_layout);
 		Toast.makeText(this, "This exercise is not ready yet", Toast.LENGTH_LONG).show();
 	}
     
